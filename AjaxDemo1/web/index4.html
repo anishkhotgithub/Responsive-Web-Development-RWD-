@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+               count=1;
+               $("button").click(function(){
+                   $("<p>This is a new paragraph "+count+"</p>").insertAfter("button");
+                   count++;
+               });
+               $("div").on("click","p",function(){
+                   $(this).hide();
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <p>Click any paragraph to make it disappear</p>
+            <button>Insert new element</button>
+        </div>
+    </body>
+</html>

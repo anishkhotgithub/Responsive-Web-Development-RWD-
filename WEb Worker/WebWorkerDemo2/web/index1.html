@@ -1,0 +1,19 @@
+
+<html>
+    <head>
+        <title>Shared Web Worker</title>
+    </head>
+    <body>
+        <script>
+            var worker=new SharedWorker("SharedWebWorker.js");
+            worker.port.addEventListener("message",function(e){
+                document.getElementById("result").innerHTML+=e.data;
+            },false);
+            
+            worker.port.start();
+            worker.port.postMessage("Page1");
+        </script>
+        
+        <p id="result"></p>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular.min.js"></script>
+    </head>
+     <body style="background: #f5e799; font-family: verdana;font-size:16px">
+        <div ng-app="" ng-init="Fruits=['Apple','Mango','Orange','Grapes']">
+            <p>Displaying Array Elements using ng-repeat Directive</p>
+            <ol>
+                <li ng-repeat="x in Fruits">
+                    {{x}}
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>
+

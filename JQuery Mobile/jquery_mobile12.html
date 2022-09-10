@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Jquery Mobile 1</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<style>
+			div.tapHoldBox
+			{
+				font-size:small;
+				color:#f00;
+			}
+			
+			div.tapHoldBox.taphold
+			{
+				font-size:x-large;
+				color:#0094ff;
+			}
+		</style>
+		<script>
+			$(function(){
+				$("div.tapHoldBox").bind("taphold",tapHandler);
+				function tapHandler(event){
+					$(event.target).addClass("taphold");
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h3>Tap the content below:</h3>
+		<div class="tapHoldBox">Enlarge me and change my color:</div>
+	</body>
+</html>

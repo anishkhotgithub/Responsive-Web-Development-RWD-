@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Jquery Mobile 1</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script>
+			$(document).on("pageinit",function(event){
+				$("p").on("swiperight",function()
+				{
+					$("#div1").html("You have swiped in the right direction");
+				});
+				
+				$("p").on("swipeleft",function()
+				{
+					$("#div1").html("You have swiped in the left direction");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div data-role="page" id="main">
+			<div data-role="main" class="ui-content">
+				<p>Swipe to the left or right direction!!!</p>
+			</div>
+			
+			<div id="div1"></div>
+			<br><br>
+		</div>
+	</body>
+</html>

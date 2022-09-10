@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular.min.js"></script>
+    </head>
+    <body style="background: #f5e799; font-family: verdana;font-size:16px">
+        <div ng-app="" ng-init="Employee={E_Name:'Sam',E_Code:'1001',E_Dept:'HR'}">
+		
+			<!--ng-bind is used when you have values stored in object-->
+			<p>The Name is <span ng-bind="Employee.E_Name"></span></p>
+			<p>The Code is <span ng-bind="Employee.E_Code"></span></p>
+            <p>The department is <span ng-bind="Employee.E_Dept"></span></p>
+        </div>
+    </body>
+</html>
+
+
+

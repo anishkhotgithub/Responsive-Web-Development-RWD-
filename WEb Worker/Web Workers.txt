@@ -1,0 +1,33 @@
+Web worker:
+
+	Bydefault our html page has only one main thread.
+	And a main thread can handle only one javascript file 
+	at a time.
+
+	If you want to execute multiple javascript codes together
+	and wants to change multiple things in your html page 
+	together.
+
+	You can create web worker.
+	Multiple web workers can handle multiple javascript file.	
+	Means You can run multiple javascript code together
+	concurrently.
+
+
+Types of web workers:
+
+	1) Dedicated web worker:
+		Which only works for one html file.
+
+	2) Shared web worker:
+		Which can work for more than one html file.
+
+
+
+JDK Software
+		
+
+Netbeans
+	
+
+	

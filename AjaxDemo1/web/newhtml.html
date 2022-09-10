@@ -1,0 +1,23 @@
+
+<html>
+    <head>
+        <style>
+            .item
+            {
+                font-size:20px;
+                color:red;
+                border:1px solid black;
+            }
+        </style>
+        <script>    
+            function myfunction()
+            {
+                var btn=document.getElementById("btn");
+                btn.classList.toggle("item");    
+            }
+        </script>    
+    </head>
+    <body>
+        <button id="btn" onmouseover="myfunction()" onmouseout="myfunction()">Hover Button</button>
+    </body>
+</html>

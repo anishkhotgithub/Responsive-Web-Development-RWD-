@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+               $("button").bind({
+                   click:function(){$("p").slideToggle();},
+                   mouseover:function(){$("p").css("color","blue");},
+                   mouseout:function(){$("p").css("color","black");}
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <p>This is Test</p>
+        <button>Hover Mouse</button>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#dropdown_selector").change(function(){
+                   var option=$(this).find("option:selected").val();
+                   
+                   if(option=="Indian"){
+                       $.ajax({url:"indian.html",success:function(result){
+                          $("#contentarea").html(result);
+                       }});
+                   }
+                   else if(option=="American"){
+                       $.ajax({url:"american.html",success:function(result){
+                          $("#contentarea").html(result);
+                       }});
+                   }
+                   else if(option=="Chinese"){
+                       $.ajax({url:"chinese.html",success:function(result){
+                          $("#contentarea").html(result);
+                       }});
+                   }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <select id="dropdown_selector">
+            <option>American</option>
+            <option>Indian</option>
+            <option>Chinese</option>
+        </select>
+        <br><br>
+        
+        <h2>Food Items:</h2>
+        <div id="contentarea">
+            <ol>
+                <li>Apple Pie</li>
+                <li>Texas Barbecue</li>
+                <li>The Hamburger</li>
+                <li>Deep-Dish Pizza</li>
+            </ol>
+        </div>
+    </body>
+</html>

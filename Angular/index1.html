@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular.min.js"></script>
+    </head>
+	<!--Two way biding-->
+    <body style="background: #f5e799; font-family: verdana;font-size:16px">
+		<div ng-app="" ng-init="firstName='John';lastName='Smith'">
+		
+			<!--Ng-model is used to bind variables in textbox-->
+            First Name: <input type="text" ng-model="firstName"/><br>
+            Last  Name: <input type="text" ng-model="lastName"/><br>
+            <br>
+			<!--Expressions-->
+            First Name : {{firstName}}<Br>
+			Last Name : {{lastName}}
+        </div>
+    </body>
+</html>

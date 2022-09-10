@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Jquery Mobile</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<style>
+			#page1, #page2
+			{
+				background:red;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Single Page Application (SPA)-->
+		
+		<div id="page1" data-role="page">
+			<div id="content" data-role="main" class="ui-content">
+				<a href="#page2" style="color:white">Goto page 2</a>
+			</div>
+		</div>
+
+		<div id="page2" data-role="page">
+			<div id="content" data-role="main" class="ui-content">
+				<a href="#page1" style="color:white">Goto page 1</a>
+			</div>
+		</div>
+	</body>
+</html>
